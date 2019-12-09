@@ -3,6 +3,7 @@ import randomDo from './random-do/index.js';
 import serviceWorker from './service-worker/index.js';
 import link from './link/index.js';
 import share from './share/index.js';
+import sentry from './sentry/index.js';
 
 const colours = '{{ hexlist }}'.split(',');
 
@@ -26,3 +27,4 @@ const next = () => fetch('/en/list.json')
 next();
 serviceWorker();
 share();
+sentry();
